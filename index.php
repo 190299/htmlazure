@@ -7,8 +7,8 @@ use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
 use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=enjelcodewebapp;AccountKey=1e9veOiWcwjxMybKPjLxHWbUZeKObE5c2ggHv0Qw+dLSiWPu1+YalaV+VHEP56UBdzQdSAJGVATyiIAaH9VLNA==;EndpointSuffix=core.windows.net";
-$containerName = "enjelcodecontainer";
+$connectionString = "DefaultEndpointsProtocol=https;AccountName=enjelwebapp;AccountKey=1e9veOiWcwjxMybKPjLxHWbUZeKObE5c2ggHv0Qw+dLSiWPu1+YalaV+VHEP56UBdzQdSAJGVATyiIAaH9VLNA==;EndpointSuffix=core.windows.net";
+$containerName = "enjelcontainer";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 if (isset($_POST['submit'])) {

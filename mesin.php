@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 	$content = fopen($_FILES["fileToUpload"]["tmp_name"], "r");
 	// echo fread($content, filesize($fileToUpload));
 	$blobClient->createBlockBlob($containerName, $fileToUpload, $content);
-	header("Location: engine.php");
+	header("Location: mesin.php");
 }
 $listBlobsOptions = new ListBlobsOptions();
 $listBlobsOptions->setPrefix("");
@@ -51,10 +51,10 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="https://submitdicoding.azurewebsites.net/">Home</a>
+				<a class="nav-link" href="https://enjelwebapp.azurewebsites.net/">Home</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="https://submitdicoding.azurewebsites.net/mesin.php">Analisis gambar<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="https://enjelwebapp.azurewebsites.net/mesin.php">Analisis gambar<span class="sr-only">(current)</span></a>
 			</li>
 		</div>
 		</nav>
