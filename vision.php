@@ -1,5 +1,3 @@
-///
-
 
 
 <?php
@@ -77,8 +75,8 @@ if (isset($_POST['submit'])) {
     };
 </script>
  
-<h1>Analyze image:</h1>
-Tekan tombol <strong>Analisis Gambar</strong> untuk mengaktifkan proses analisis picture
+<h1>Computer Vision Image:</h1>
+Tekan tombol <strong>Analisis Gambar</strong> untuk memproses analisis picture
 <br><br>
 Link  gambar:
 <input type="text" name="inputImage" id="inputImage"

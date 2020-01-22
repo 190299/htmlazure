@@ -45,8 +45,8 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <body>
     <main role="main" class="container">
             <div class="starter-template"> <br>
-                <h1>Image Analyzer</h1>
-                <p class="lead">Pilih foto dari komputer yang ingin Anda analisis. lalu klik tombol <b>Upload</b> <br>Untuk memulai proses analisis foto, pilih tombol <b>Analyze!</b> pada pilihan gambar di masing-masing daftar.</p>
+                <h1>Computer Vision Image</h1>
+                <p class="lead">Masukkan Foto </p>
                 <span class="border-top my-3"></span>
             </div>
         <div class="mt-4 mb-2">
@@ -78,7 +78,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
                             <td>
                                 <form action="vision.php" method="post">
                                     <input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">
-                                    <input type="submit" name="submit" value="Analyze!" class="btn btn-primary">
+                                    <input type="submit" name="submit" value="Analisis" class="btn btn-primary">
                                 </form>
                             </td>
                         </tr>
